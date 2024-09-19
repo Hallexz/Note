@@ -1,0 +1,323 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #7267a2, #c0639b);
+  font-family: 'Iris Sans', sans-serif; 
+}
+
+/* Стиль контейнера для формы входа */
+.login-container {
+  background-image: linear-gradient(to bottom, rgba(30, 25, 73, 0.55), rgba(151, 59, 131, 0.55));
+  padding: 45px;
+  border-radius: 47px;
+  color: white;
+  width: 567px; 
+  height: 575px;
+} 
+
+/* Стиль заголовка формы входа */
+.login-header {
+  margin-bottom: 25px; 
+}
+
+.login-header h2 {
+  text-align: left;
+  font-size: 64px; 
+  font-weight: bold; 
+  color: #FFCEF7; 
+  font-family: 'Inika', sans-serif; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+/* Стиль полей ввода */
+.form-control {
+  background-color: #E1A8E2;
+  border: none;
+  border-radius: 16px;
+  height: 62px;
+  width: 100%; 
+  padding: 15px; 
+  box-sizing: border-box; 
+  font-family: 'Iris Sans', sans-serif; 
+  font-weight: bold; 
+  font-size: 34px; 
+}
+
+/* Стиль лейблов для полей ввода */
+.form-group label {
+  font-family: 'Iris Sans', sans-serif; 
+  font-weight: bold; 
+  font-size: 24px; 
+  color: #FA98EA; 
+  margin-left: 5px;
+}
+
+/* Стиль полей ввода при фокусе */
+.form-control:focus {
+  background-color: #E1A8E2; 
+  box-shadow: none; 
+  outline: none; 
+}
+
+/* Стиль кнопки "Войти" */
+.btn-login {
+  font-family: 'Iris Sans', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #FFCEF7;
+  background-color: #432458;
+  border: none;
+  width: 100%;
+  height: 93px;
+  border-radius: 16px;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+/* Стиль кнопки "Войти" при наведении */
+.btn-login:hover {
+  color: #FFCEF7;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+} 
+
+/* Стиль текста "Создать аккаунт" */
+.create-account {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: bold; 
+  font-family: 'Iris Sans', sans-serif;
+}
+
+/* Стиль ссылки "Создать аккаунт" */
+.create-account a {
+  color: #E7C2E1;
+  text-decoration: none;
+}
+
+/* Стиль ссылки "Создать аккаунт" при наведении */
+.create-account a:hover {
+ text-decoration: underline;
+}
+
+
+/* Стиль карточки заметки */
+.note {
+  height: 314px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  background: none;
+ 
+}
+
+/* Стиль описания заметки */
+.note-description {
+  background-color: #47285b;
+  padding: 20px; 
+  border-radius: 12px; 
+  height:180px;
+}
+
+/* Псевдоэлемент для фона карточки */
+.note::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 314px;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(51, 44, 114, 0.5), rgba(121, 53, 110, 0.5));
+  border-radius: 16px; 
+  z-index: -1;
+  pointer-events: none; 
+}
+
+/* Удаление обводки при фокусе на карточке */
+.note:focus {
+  outline: none; 
+}
+
+/* Удаление тени у кнопок при фокусе */
+.note .btn-warning:focus,
+.note .btn-danger:focus {
+  box-shadow: none;
+}
+
+/* Стиль заголовка заметки */
+.note .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Стиль текста заметки */
+.note .card-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Стиль кнопок "Изменить" и "Удалить" */
+.note .btn-warning,
+.note .btn-danger {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+/* Стиль кнопки "Изменить" */
+.note .btn-warning {
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+  margin-right: 10px;
+}
+
+/* Стиль кнопки "Удалить" */
+.note .btn-danger {
+  background-color: #ff3b6a;
+  color: #fff;
+  border: none;
+}
+
+/* Стиль кнопки "Добавить заметку" */
+.add-note {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #2E2154;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1030;
+}
+
+/* Стиль группы кнопок "Изменить" и "Удалить" */
+.note .btn-group {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 4px;
+  overflow: hidden; 
+  height: 50px;/
+}
+
+/* Стиль кнопки "Изменить" в группе */
+.note .btn-edit {
+  background-color: #ff3b6a; 
+
+  border: none;
+  width: 50%; /* Занимает половину ширины */
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  height: 30px;
+}
+
+/* Стиль кнопки "Удалить" в группе */
+.note .btn-delete {
+  background-color: #47285b; 
+  
+  border: none;
+  width: 50%; /* Занимает половину ширины */
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  height: 30px;
+}
+
+/* Медиа-запрос для экранов с шириной менее 768px */
+@media (max-width: 768px) {
+  .note .btn-group {
+    position: static;
+    width: 100%; 
+    margin-top: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+  }
+  
+
+  .note .btn-edit,
+  .note .btn-delete {
+    width: 48%; 
+    border-radius: 4px;
+    .note {
+      width: 90%;
+    }
+  }
+}
+
+/* Стиль боковой панели */
+.sidebar {    
+  background-image: linear-gradient(to bottom, rgba(30, 25, 73, 0.8), rgba(151, 59, 131, 0.8));
+  color: #fff;
+  height: 100vh;
+  padding: 60px;
+}
+
+/* Стиль заголовка боковой панели */
+.sidebar h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Стиль элемента профиля в боковой панели */
+.sidebar .profile-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Стиль круга с аватаркой */
+.sidebar .profile-item .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+/* Стиль имени пользователя в боковой панели */
+.sidebar .profile-item p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Стиль кнопки "Выйти" */
+.sidebar .logout-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2E2154;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
